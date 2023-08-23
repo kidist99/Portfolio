@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+
+    <!--fontawesome-->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!--css-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!--header start-->
+
+    <div id="header">
+        
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                
+                <i id="bar" class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <img src="images/sun.png" id="icon">
+            
+            </nav>
+            <div class="container">
+
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Kidist</span></h1>
+                <p>Front-end developer</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--header end-->
+
+    <!--about start-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/back.PNG" alt="my photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> a passionate front end web developer specialize in building stunning responsive websites/web applications.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificates</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML, CSS, JAVASCRIPT, Python</li>
+                            <li>React, Bootstrap, SAAS</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Front-end developer</li>
+                            <li>Sales officer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li>HTML certificate</li>
+                            <li>CSS certificate</li>
+                            <li>JAVASCRIPT certificate</li>
+                            <li>Responsive web design</li>
+                            <li>JAVASCRIPT Data Structre and Algorithm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--about end-->
+    
+
+    <!--services start-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web dev't</h2>
+                    <p>I build websites using html, css, and js</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Resposive design</h2>
+                    <p>I build responsive websites for different devices</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>I build websites using html, css, and js</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services end-->
+
+    <!--portfolio start-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/projects/ecommerce.PNG" alt="ecommerce website">
+                    
+                    <div class="layer">
+                        <h3>Ecommerce website</h3>
+                        <p>HTML, CSS, JAVASCRIPT</p>
+                        <a href="https://github.com/kidist99/ecommerce.git" target="_blank">Github Link</a>
+                        <a href="projects/ecommerce/index.html" target="_blank">Project Link</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/portfolio.PNG" alt="portfolio website">
+
+                    <div class="layer">
+                        <h3>Portfolio website</h3>
+                        <p>HTML, CSS, JAVASCRIPT</p>
+                        <a href="https://github.com/kidist99/Portfolio" target="_blank">Github Link</a>
+                        <a href="index.html">Project Link</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/calculator.PNG" alt="calculator" height="168px" >
+
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>HTML, CSS, JAVASCRIPT</p>
+                        <a href="https://github.com/kidist99/Calculator" target="_blank">Github Link</a>
+                        <a href="projects/cals/index.html" target="_blank">Project Link</a>
+                    </div>
+                </div>
+            </div>
+<!--see more button-->
+            <a onclick="displayImage()" class="btn" id="btn22" style="cursor: pointer;">See more</a>
+            <div id="moreImage" style="display: none;">
+                
+                <div class="work">
+                    <img src="images/haile.PNG" alt="Tribute page" style="width: 100%; height: 300px; object-fit: contain; " >
+
+                    <div class="layer">
+                        <h3>Tribute page</h3>
+                        <p>HTML, CSS</p>
+                        <a href="https://github.com/kidist99/Tribute.git" target="_blank">Github Link</a>
+                        <a href="projects/haile/haile.html" target="_blank">Project Link</a>
+                    </div>
+                </div>
+            </div>
+
+<!--see more button ends-->
+        </div>
+    </div>
+
+    <!--portfolio end-->
+
+    <!--contact start-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>kidistamanuel22@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kidist-amm/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kidist99" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Resume (4).pdf" target="_blank" download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!--contact end-->
+
+    <!--footer start-->
+    <div class="copyright">
+        <marquee>Copyright © 2023 </marquee>
+    </div>
+
+    <!--footer end-->
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+
+ 
+
+    </script>
+
+
+    <script>
+        function displayImage() {
+            var projects = document.getElementById("moreImage");
+            projects.style.display = "block";
+    
+    
+}
+    </script>
+
+    <script>
+        const btn22 = document.getElementById("btn22");
+        btn22.addEventListener('click', () => {
+            btn22.style.visibility = 'hidden';
+
+            const moreImage = document.getElementById('moreImage');
+            moreImage.style.visibility = 'visible';
+        });
+    </script>
+
+
+    
+
+</body>
+</html>
